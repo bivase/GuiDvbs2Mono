@@ -1,0 +1,12 @@
+[submodule "stdafx"]
+	path = stdafx
+	url = https://github.com/bivase/stdafx
+[submodule "bits_operations"]
+	path = bits_operations
+	url = https://github.com/bivase/bits_operations
+[submodule "idxs"]
+	path = idxs
+	url = https://github.com/bivase/idxs
+[submodule "dvbs2_mono"]
+	path = dvbs2_mono
+	url = https://github.com/bivase/dvbs2_mono
