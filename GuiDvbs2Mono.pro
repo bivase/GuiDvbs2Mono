@@ -2,7 +2,10 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++11
+CONFIG += c++2a precompile_header
+PRECOMPILED_HEADER = stdafx/stdafx.h
+HEADERS += stdafx/stdafx.h \
+    bits_operations/bits_operations.hpp
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -10,7 +13,10 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    bits_operations/bits_operations.hpp \
+    idxs/idxs.hpp \
+    dvbs2_mono/dvbs2_mono.hpp
 
 HEADERS += \
     mainwindow.h
