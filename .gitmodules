@@ -10,3 +10,6 @@
 [submodule "dvbs2_mono"]
 	path = dvbs2_mono
 	url = https://github.com/bivase/dvbs2_mono
+[submodule "random"]
+	path = random
+	url = https://github.com/bivase/random

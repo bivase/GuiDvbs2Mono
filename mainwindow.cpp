@@ -30,10 +30,10 @@ void MainWindow::on_BtnInFile_clicked()
 void MainWindow::on_BtnRun_clicked()
 {
     if(!m_in_file.isEmpty() && !m_out_file.isEmpty()){
-        dvbs2_mono<>::get_data(m_in_file.toStdString(), m_out_file.toStdString());
+        dvbs2_mono<>::get_data(m_in_file.toStdString(), m_out_file.toStdString(), ui->CheckChangeBits->checkState());
     }
     if(!m_in_dir.isEmpty() && !m_out_dir.isEmpty()){
-        dvbs2_mono<>::get_data_dir(m_in_dir.toStdString(), m_out_dir.toStdString());
+        dvbs2_mono<>::get_data_dir(m_in_dir.toStdString(), m_out_dir.toStdString(), ui->CheckChangeBits->checkState());
     }
 }
 

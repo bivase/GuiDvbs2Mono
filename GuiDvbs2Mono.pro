@@ -4,8 +4,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++2a precompile_header
 PRECOMPILED_HEADER = stdafx/stdafx.h
-HEADERS += stdafx/stdafx.h \
-    bits_operations/bits_operations.hpp
+HEADERS += stdafx/stdafx.h
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
